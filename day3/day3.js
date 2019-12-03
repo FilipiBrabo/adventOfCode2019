@@ -7,4 +7,10 @@ function manhatam(p1, p2) {
     return Math.abs(p1.x - p2.x) + Math.abs(p1.y - p2.y)
 }
 
+function isHorizontal(s) {
+    const dir = s.split('')[0];
+    return dir === 'L' || dir === 'R';
+}
+
 // Part 1
+    console.log(wire1[0].split(''))
