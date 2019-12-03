@@ -44,8 +44,8 @@ const {noun, verb} = getVars(program);
 console.log(noun, verb);
 
 function getVars (program) {
-    for (let noun = 0; noun < program.length; noun++) {
-        for (let verb = 0; verb < program.length; verb++) {
+    for (let noun = 0; noun < 99; noun++) {
+        for (let verb = 0; verb < 99; verb++) {
             program[1] = noun;
             program[2] = verb;
             if (calculate(program) === 19690720) {
@@ -55,6 +55,3 @@ function getVars (program) {
         }
     }
 }
-
-
-
