@@ -16,12 +16,12 @@ function getNumOfOrbits(node, graph) {
 
     const target = 'COM';
 
-    let neighbor = graph.adjacent(node)[0]
+    let [neighbor] = graph.adjacent(node)
 
     let numOfOrbits = 1;
     while (neighbor !== target && neighbor) {
         numOfOrbits++;
-        neighbor = graph.adjacent(neighbor)[0]
+        [neighbor] = graph.adjacent(neighbor)
     }
 
     return numOfOrbits;
